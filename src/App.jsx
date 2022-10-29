@@ -1,9 +1,17 @@
-import React from 'react'
+import Features from "./components/Features"
+import Footer from "./components/Footer"
+import Header from "./components/Header"
+import Infrastructure from "./components/Infrastructure"
+import Service from "./components/Service"
 
 const App = () => {
   return (
     <>
-      <h1 className='text-fuchsia-600 text-center text-4xl font-bold'>Vite + React</h1>
+      <Header/>
+      <Service/>
+      <Infrastructure/>
+      <Features/>
+      <Footer/>
     </>
   )
 }

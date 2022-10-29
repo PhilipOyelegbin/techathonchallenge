@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    *, ::before, ::after {
+        @apply text-base scroll-smooth box-border m-0 p-0;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    h1 {
+        @apply text-[40px] font-bold;
+    }
+    h2 {
+        @apply text-4xl font-bold;
+    }
+    h3 {
+        @apply text-3xl font-medium;
+    }
+    h4 {
+        @apply text-2xl font-medium;
+    }
+
+    p {
+        font-family: 'Overpass', sans-serif;
+    }
+    
+}
+
+@layer components {
+    .iconicbtn {
+        @apply flex items-center gap-2 text-Gray-blue cursor-pointer;
+    }
+
+    .whitebtn {
+        @apply inline-block bg-White text-Red rounded-full cursor-pointer px-4 py-2;
+    }
+
+    .redbtn {
+        @apply inline-block bg-Red text-White border border-White rounded-full cursor-pointer px-4 py-2;
+    }
+
+    .attribution {
+        @apply text-[11px] text-center mt-5 text-White;
+    }
+    .attribution a {
+        @apply text-Attribution;
+    }
+}
